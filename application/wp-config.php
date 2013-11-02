@@ -19,10 +19,10 @@
 define('DB_NAME', 'madetonight');
 
 /** MySQL database username */
-define('DB_USER', 'mtweb');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'sOv5gRTepnL2UP');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', '127.0.0.1');

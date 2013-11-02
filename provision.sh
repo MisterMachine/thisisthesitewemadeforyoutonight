@@ -34,8 +34,10 @@ export DEBIAN_FRONTEND=noninteractive
     apt-get install -y mysql-server
     sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/my.cnf
     restart mysql
-    mysql -uroot mysql <<< "GRANT ALL ON *.* TO 'root'@'%'; FLUSH PRIVILEGES;"
+    mysql -u root mysql <<< "GRANT ALL ON *.* TO 'root'@'%'; FLUSH PRIVILEGES;"
 
+say "I'm creating the database 'madetonight'"
+    mysql -u root -e 'create database madetonight'
 
 say "I'm installing PHP Modules"
     # Install php5, libapache2-mod-php5, php5-mysql curl php5-curl
