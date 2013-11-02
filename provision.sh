@@ -13,6 +13,7 @@ function say {
     printf "\n--------------------------------------------------------\n"
 }
 
+db='madetonight'
 
 # Install Apache
 say "Installing Apache and setting it up."
@@ -36,8 +37,11 @@ export DEBIAN_FRONTEND=noninteractive
     restart mysql
     mysql -u root mysql <<< "GRANT ALL ON *.* TO 'root'@'%'; FLUSH PRIVILEGES;"
 
-say "I'm creating the database 'madetonight'"
-    mysql -u root -e 'create database madetonight'
+say "I'm creating the database '$db'"
+    mysql -u root -e "create database $db"
+
+say "Populating Database"
+    mysql -u root -D $db < /vagrant/sql/{$db}.sql
 
 say "I'm installing PHP Modules"
     # Install php5, libapache2-mod-php5, php5-mysql curl php5-curl
