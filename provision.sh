@@ -41,7 +41,7 @@ say "I'm creating the database '$db'"
     mysql -u root -e "create database $db"
 
 say "Populating Database"
-    mysql -u root -D $db < /vagrant/sql/{$db}.sql
+    mysql -u root -D $db < /vagrant/sql/$db.sql
 
 say "I'm installing PHP Modules"
     # Install php5, libapache2-mod-php5, php5-mysql curl php5-curl

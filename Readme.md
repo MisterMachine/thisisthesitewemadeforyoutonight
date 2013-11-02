@@ -6,7 +6,9 @@
 
 Open this project in terminal. 
 Type in: vagrant up
+Visit: http://192.168.33.10/
 
 ## WordPress Admin
 user: batman
 pwd: dev
+
