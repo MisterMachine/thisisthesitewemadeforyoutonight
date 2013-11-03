@@ -28,5 +28,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "apache.sh"
 
   # Compass watch
-  
+  config.vm.provision "shell", path: 'compass.sh'
 end
