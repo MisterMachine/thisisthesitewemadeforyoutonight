@@ -8,7 +8,9 @@
  Version:        1.0.0
 */
 
+// This will import the base genesis theme styles
+// It will generate as @import url(../genesis/style.css); in the style.css file
+@import "../genesis/style.css";
+
+// =Include Variables
 @import "variables";
-
-@import url(../genesis/style.css);
-
