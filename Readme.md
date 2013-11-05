@@ -5,7 +5,10 @@
 ## Getting Started
 
 Open this project in terminal. 
-Type in: vagrant up
+
+In terminal, type: 
+    $: vagrant up --provision
+
 Visit: http://192.168.33.10/
 
 ## WordPress Admin

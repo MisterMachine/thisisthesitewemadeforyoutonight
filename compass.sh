@@ -10,5 +10,6 @@ compass compile $scss_path
 # Now, watch the project for changes
 compass watch $scss_path > /dev/null 2>/dev/null &
 cid=$! > ./cwatch.pid
-printf "Compass is watcing your project\n"
-printf "PID: $cid"
+printf "Compass is watcing your project - PID: $cid\n"
+printf "\n\nDevelopment environment is up and running."
+printf "\nOpen the following url in your browser: http://192.168.33.10 (Cmd + Click)"
