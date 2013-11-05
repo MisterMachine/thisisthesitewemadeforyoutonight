@@ -27,10 +27,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Copy the vhost file to default and reload apache - run every vagrant up
   config.vm.provision "shell", path: "apache.sh"
 
-  # Compass watch
-  config.vm.provision "shell" do |s|
-     s.privileged = false
-     s.path = 'compass.sh'
-  end
-  
+  # Compass watch - don't run as sudo
+  config.vm.provision "shell", path: 'compass.sh', privileged: false
+
 end
