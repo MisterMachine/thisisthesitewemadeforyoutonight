@@ -6,7 +6,7 @@
 
 Open this project in terminal. 
 
-In terminal, type: 
+Then type: 
 
     $: vagrant up --provision
 
