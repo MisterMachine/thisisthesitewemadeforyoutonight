@@ -1,0 +1,19 @@
+
+// =Header Font
+$header-font-weight: $font-semi-bold-weight !default;
+
+
+body {
+    font: #{$base-font-size}/#{$base-line-height} $base-font-family;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $header-font-weight;
+}
+
+
+// =Entry Titles
+.entry-title {
+    text-transform: uppercase;
+}

@@ -14,3 +14,13 @@
 
 // =Include Variables
 @import "variables";
+// =Include Functions
+@import "functions/all";
+// =Include Mixins
+@import "mixins/all";
+
+// =Include Global Styles
+@import "global/all";
+
+// =Include Layout styles
+@import "layout/all";

@@ -1,0 +1,24 @@
+
+// =Site Header
+$site-header-bg: lighten( $hotness, 15% ) !default;
+$site-title-color: white !default;
+$site-description-color: black !default;
+
+body {
+    background-color: lighten( $base-body-bg, 15% );
+}
+
+.site-header {
+    background-color: $site-header-bg;
+}
+
+    .site-title {
+        &, 
+        a {
+            color: $site-title-color;
+        }
+    }
+
+    .site-description {
+        color: $site-description-color;
+    }

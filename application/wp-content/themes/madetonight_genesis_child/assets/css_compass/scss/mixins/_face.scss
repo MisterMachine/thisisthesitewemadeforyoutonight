@@ -1,0 +1,5 @@
+@import "compass/css3/font-face";
+
+@mixin face( $name, $src, $weight: $font-normal-weight, $style: normal, $eot: true ) {
+    @include font-face( $name, font-files( "#{$src}.woff", "#{$src}.ttf" ), $eot: "#{$src}.eot", $weight: $weight, $style: $style );
+}
