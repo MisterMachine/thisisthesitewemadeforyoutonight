@@ -1,6 +1,6 @@
 # This is the site we made for you
 ##### By friends
-##### No, but seriously, by _unicorns_, _cats_ and _ninjas_! 
+##### No, but seriously, by _unicorns_, _kittens_ and _ninjas_! 
 
 ## Getting Started
 
