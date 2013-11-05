@@ -7,11 +7,8 @@
 Open this project in terminal. 
 
 In terminal, type: 
+
     $: vagrant up --provision
 
 Visit: http://192.168.33.10/
-
-## WordPress Admin
-user: batman
-pwd: dev
 
